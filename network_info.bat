@@ -10,9 +10,9 @@ run_nmap(){
 
 run_tcpdump() {
     echo "=== Tcpdump Packet Capture ===" >> "$OUTPUT_FILE"
-    echo "Запуск tcpdump на 5 секунд..." >> "$OUTPUT_FILE"
+    echo "Run tcpdump at 5 secund..." >> "$OUTPUT_FILE"
     timeout 5 tcpdump -i lo -c 50 >> "$OUTPUT_FILE" 2>&1
-    echo "Tcpdump завершено." >> "$OUTPUT_FILE"
+    echo "Tcpdump completed." >> "$OUTPUT_FILE"
 }
 
 echo "Run the script..."
